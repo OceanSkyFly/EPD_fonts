@@ -5,5 +5,7 @@ cat str.txt | iconv -f utf-8 -t c99 | sed 's/\\u\([0-9a-f]\{4\}\)/\$\1,\n/g' | s
 
 
 echo '#include "myfont.h"' > u8g2_font_wqy12_t_myfont.c
+
 cat _u8g2_font_wqy12_t_myfont.c >> u8g2_font_wqy12_t_myfont.c
+
 rm _u8g2_font_wqy12_t_myfont.c
