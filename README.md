@@ -1,4 +1,5 @@
 https://github.com/olikraus/u8g2/tree/master
+http://wenq.org/
 
 cat str.txt | iconv -f utf-8 -t c99 | sed 's/\\u\([0-9a-f]\{4\}\)/\$\1,\n/g' | sort | uniq | sed '/^$/d' | tr '/a-f/' '/A-F/' >> myfont.map
 
